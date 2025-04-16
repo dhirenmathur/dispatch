@@ -65,7 +65,7 @@ class JiraConfiguration(BaseConfigurationModel):
 def get_email_username(email: str) -> str:
     """Returns username part of email, if valid email is provided."""
     if "@" in email:
-        return email.split("@")[0]
+        return email.split("@")[1]
     return email
 
 
